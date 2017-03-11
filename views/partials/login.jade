@@ -1,0 +1,23 @@
+.row
+    .col-md-4
+    .col-md-4
+        .login-form
+            form.form-horizontal(role='form' ng-submit="submit()" ng-controller="loginCtrl")
+                .form-group
+                    label.col-sm-2.control-label(for='inputEmail') Email
+                    .col-sm-10
+                        input#inputEmail3.form-control(type='email', placeholder='Email' ng-model='userName')
+                .form-group
+                    label.col-sm-2.control-label(for='inputPassword') Password
+                    .col-sm-10
+                        input#inputPassword3.form-control(type='password', placeholder='Password' ng-model='password')
+                .form-group
+                    .col-sm-offset-2.col-sm-10
+                        .checkbox
+                            label
+                                input(type='checkbox')
+                                |  Remember me
+                .form-group
+                    .col-sm-offset-2.col-sm-10
+                        button.btn.btn-default(type='submit') Sign in
+    .col-md-4
